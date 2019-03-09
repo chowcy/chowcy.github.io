@@ -1,0 +1,426 @@
+/* Colour Palette:
+Purple
+RGB  102, 51, 102
+CMYK 65, 91, 32, 18
+HEX  663366
+
+Black
+RGB  0, 0, 0
+CMYK 75, 68, 67, 90
+HEX  000
+
+Dark Grey
+RGB  100, 101, 10
+CMYK 60, 52, 51, 21
+HEX  646564
+
+Light Grey
+RGB  200, 200, 200
+CMYK 21, 16, 17, 0
+HEX  C8C8C8
+
+White
+RGB  255, 255, 255
+CMYK 0, 0, 0, 0
+HEX  FFF
+
+
+ */
+
+/* GENERAL */
+aside {
+	margin: 0 auto;
+	text-align: center;
+}
+
+body {
+	background-color: rgb(225, 230, 240);
+	font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+	margin-top: 122px;
+}
+
+h1, h2, h3, h4 {
+	font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	color: #663366;
+	font-size: 24px;
+	margin: 0;
+}
+
+h3 {
+	color: #663366;
+	font-size: 24px;
+}
+
+h4 {
+	font-style: italic;
+	margin-top: 0;
+}
+
+iframe {
+	box-shadow: 5px 5px 1px #888888;
+	display: block;
+	margin: 1em auto;
+}
+
+img {
+	margin: 0em auto 2em auto;
+	padding: 0;
+}
+
+main {
+	padding-top: 15px;
+}
+
+p {
+	font-size: 16px;
+}
+
+p a {
+	color: #000;
+	text-decoration: underline;
+}
+
+section {
+	background-color: #FFF;
+	color: #444;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-bottom: 25px;
+	padding: 1em;
+}
+
+ul {
+	font-size: 16px;
+	list-style-type: none;
+	text-align: left;
+}
+
+.dots {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.dots li {
+	position: relative;
+}
+.dots li::before {
+    content: '';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: #646564;
+    left: -20px;
+    position: absolute;
+    top: 8px;
+}
+
+.external-links {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.external-links li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.external-links a {
+	color: rgba(0, 119, 181, 1);
+	font-family: Tahoma, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 2em;
+	padding: 0 0.5em;
+}
+
+.external-links a:hover {
+	text-decoration: none;
+}
+/*ADD STYLES TO ANYTHING*/
+.margin0auto {
+	margin: 0 auto;
+}
+
+.centerize {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/*HEADER*/
+header {
+	background-color: #FFF;
+	box-shadow: 0 0 5px #000;
+	left: 0;
+	padding: 15px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.navbar-nav {
+	/* background-color: rgba(230, 230, 230, 0.9); */
+	background-color: rgba(0, 0, 0, 0);
+	float: none;
+	margin: 0 auto;
+	max-width: 300px;
+}
+
+.navbar-nav > li {
+	float: left;
+}
+
+.navbar-nav > li > a:hover {
+	background: none;
+}
+
+.navbar-nav h2 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.navbar-header a {
+	display: inline-block;
+}
+
+.active {
+	/* background-color: #eee; */
+	color: #23527c;
+	font-weight: 900;
+	/*text-shadow: 2px 2px #888888;*/
+}
+
+.active h2:after, .navbar-nav > li > a:hover:after {
+	background: #663366;
+	bottom: 9px;
+	content:"";
+	display: block;
+	height: 2px;
+	left: 15px;
+	position: absolute;
+	right: 15px;
+}
+
+.language-toggle {
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+
+#skiptomain{
+	position: absolute;
+	top: -30px;
+}
+
+#name{
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+#name-subtitle {
+	color: #444;
+	display: none;
+}
+/* ABOUT */
+#self-img {
+	height: 422px;
+}
+
+/* PROJECTS PAGE WITH GRID */
+.project {
+	background-color: white;
+	border: 3px solid white;
+	/* height: 20em; */
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	/*box-shadow: 5px 5px 1px #888888;*/
+}
+
+.overlay-container {
+	position: relative;
+}
+
+.project img {
+	border: none;
+	display: block;
+	height: auto;
+	margin: 0;
+	width: 100%;
+}
+
+.overlay {
+	background-color: #663366;/*#d3a0f3;*/
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .5s ease;
+	width: 100%;
+}
+
+.overlay-container:hover .overlay, .overlay-container:focus .overlay {
+	opacity: 1;
+}
+
+.project p {
+	color: #fff;
+	font-size: 18px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.uk-panel-box {
+	background: none;
+}
+
+.uk-subnav {
+	margin-left: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.uk-subnav-pill > .uk-active > * {
+	background-color: #663366;
+}
+
+.uk-subnav-pill > * > :hover {
+    background: #663366;
+    color: #FFF;
+ }
+
+/* TRANSLATIONS PAGE */
+.book-title {
+	font-style: italic;
+}
+
+.translation-type {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#transportfolio ul li ul li {
+	font-size: 0.75em;
+	list-style-type: none;
+}
+
+/* SPECIFIC PROJECT PAGE */
+.portfolio-section {
+	text-align: center;
+}
+
+.title-section {
+	border-bottom: 1px solid #C8C8C8;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.context img {
+	margin-top: 15px;
+}
+
+.context h4 {
+	font-style: normal;
+   font-weight: bold;
+	margin-bottom: 0;
+   margin-top: 15px;
+	text-align: left;
+}
+
+.context p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.portfolio-section p {
+	/* margin: 0 auto;
+	max-width: 40em; */
+	/* padding-bottom: 1.5em; */
+	text-align: left;
+}
+
+.portfolio-section aside {
+	font-size: 0.75em;
+	font-style: italic;
+}
+
+.embed-responsive {
+	margin: 0 auto;
+	min-width: 250px;
+	min-height: calc(250px*9/16);
+	max-width: 768px;
+	max-height: calc(768px*9/16);
+}
+
+/* GRAPHIC DESIGN PAGE */
+.sample520 img{
+	border: none;
+	box-shadow: none;
+}
+
+.sample520 {
+	text-align: center;
+}
+
+/* FOOTER */
+footer {
+	background-color: #FFFFFF;
+	border-top: 2px solid #663366;
+	bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+/*for medium/tablet screens and bigger*/
+@media all and (min-width: 768px){
+	body {
+		margin-top: 80px;
+	}
+	section {
+		padding: 1em;
+	}
+
+	.navbar-nav {
+		max-width: none;
+	}
+	.navbar-nav > li > a {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.project {
+		min-width: 345px;
+	}
+	.embed-size {
+		max-width: 768px;
+	}
+}
+
+/*for large screens*/
+@media all and (min-width: 1244px){
+	#skiptomain:focus {
+		background-color: white;
+		color: black;
+		font-weight: bold;
+		top: 0px;
+		padding: 1em;
+	}
+	#name-subtitle {
+		display: inline;
+	}
+
+}

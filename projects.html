@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Font Awesome Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!--UI Kit-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/grid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/grid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/nav.min.js"></script>
+  <!--lightbox style sheet-->
+	<link href="css/lightbox.css" rel="stylesheet">
+	<!--my custom style sheet-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="img/logobig.png">
+	<script type="text/javascript" src="js/script.js"></script>
+        <title>Cathy | Projects</title>
+    </head>
+    <body>
+    	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96346257-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	    <header>
+			<div><a id="skiptomain" href="#main">Skip to Main Content</a></div>
+			<nav>
+				<a href="index.html"><h1 class="navbar-header"><span id="name">CATHY Y CHOW</span>   <span id="name-subtitle">UX Designer and Developer</span></h1></a>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" hreflang="en" class=""><h2>About</h2></a></li>
+					<li><a href="projects.html" hreflang="en" class=active><h2>Projects</h2></a></li>
+					<li><a href="resume.html" hreflang="en" class=""><h2>Resume</h2></a></li>
+				</ul>
+			</nav>
+		</header>
+   <main id="main">
+      <!-- Filter Controls -->
+         <ul id="project-grid" class="uk-subnav uk-subnav-pill">
+            <li data-uk-filter="" class="uk-active"><a href="">All Projects</a></li>
+            <li data-uk-filter="filter-a"><a href="">Design</a></li>
+            <li data-uk-filter="filter-b"><a href="">Research</a></li>
+         </ul>
+      <!-- Dynamic Grid -->
+      <div data-uk-grid="{gutter: 10, controls: '#project-grid'}" class="uk-grid">
+         <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1" data-uk-filter="filter-a, filter-b">
+            <div class="uk-panel-box">
+               <section class="project">
+                  <h3>Eye Disease Simulator</h3>
+                  <h4>UX Research. UX Design</h4>
+                  <div class="overlay-container">
+                     <img class="img-responsive" src="img/tile-eds.jpg" alt="">
+                     <a href="eyediseasesimulator.html" hreflang="en">
+                       <div class="overlay">
+                          <p>mobile VR app that simulates eye diseases.</p>
+                       </div>
+                     </a>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1" data-uk-filter="filter-a">
+            <div class="uk-panel-box">
+               <section class="project">
+                  <h3>Free Your Stuff</h3>
+                  <h4>UX Design.</h4>
+                  <div class="overlay-container">
+                     <img class="img-responsive" src="img/tile-fys.jpg" alt="">
+                     <a href="freeyourstuff.html" hreflang="en">
+                       <div class="overlay">
+                          <p>mobile app design to share community resources.</p>
+                       </div>
+                     </a>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1" data-uk-filter="filter-b">
+            <div class="uk-panel-box">
+               <section class="project">
+                  <h3>Harman Infotainment</h3>
+                  <h4>UX Research. Consulting.</h4>
+                  <div class="overlay-container">
+                     <img class="img-responsive" src="img/tile-harman.jpg" alt="">
+                     <a href="harman.html" hreflang="en">
+                        <div class="overlay">
+                           <p>usability research on an in-vehicle infotainment system.</p>
+                        </div>
+                     </a>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1" data-uk-filter="filter-a,filter-b">
+            <div class="uk-panel-box">
+               <section class="project">
+                  <h3>SmartVision</h3>
+                  <h4>UX Design. UX Research. </h4>
+                  <div class="overlay-container">
+                     <img class="img-responsive" src="img/tile-smartvision.jpg" alt="">
+                     <a href="smartvision.html" hreflang="en">
+                        <div class="overlay">
+                           <p>mobile app design/dev for low-vision people.</p>
+                        </div>
+                     </a>
+                  </div>
+               </section>
+            </div>
+         </div>
+         <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-1" data-uk-filter="filter-a">
+            <div class="uk-panel-box">
+               <section class="project">
+                  <h3>Graphic Design</h3>
+                  <h4>Graphic Design. Typography.</h4>
+                  <div class="overlay-container">
+                     <img class="img-responsive" src="img/tile-floral.jpg" alt="">
+                     <a href="graphicdesign.html" hreflang="en">
+                        <div class="overlay">
+                           <p>Various graphic design samples. </p>
+                        </div>
+                     </a>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </main>
+		<footer>
+			<ul class="external-links">
+				<li><a href="https://www.linkedin.com/in/cathy-chow-5541aa95" hreflang="en" target="_blank" aria-label="linkedin"><i class="fa fa-linkedin-square"></i><span id="linkedin"></span></a></li>
+				<li><a href="https://github.com/chowcy" hreflang="en" target="_blank" aria-label="github"><i class="fa fa-github"></i><span id="github"></span></a></li>
+				<li><a href="mailto:chowcy@umich.edu" hreflang="en" target="_blank" aria-label="email"><i class="fa fa-envelope"></i><span id="email"></span></a></li>
+			</ul>
+
+			<aside>&copy; Cathy Chow (<a href="mailto:chowcy@umich.edu" hreflang="en">chowcy@umich.edu</a>)</aside>
+		</footer>
+		<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
